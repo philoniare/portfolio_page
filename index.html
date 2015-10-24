@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="pull-left logo" src="images/udacity-logo.jpg" alt="Udacity Logo">
+        </div>
+        <div class="col-md-8 header-text">
+          <h2 class="name">Philomath Ingeniare</h2>
+          <h3 class="desc">Software Engineer</h3>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- main image -->
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-image.webp" type="image/webp">
+        <img src="images/hero-image.jpg" alt="ones and zeros">
+      </picture>
+
+    </div>
+    <div class="projects">
+      <div class="row">
+        <h2 id="featured-title">Featured Work</h2>
+      </div>
+      <div class="row">
+        <div class="project-thumbnails">
+          <div class="col-md-4">
+            <div class="project-desc">
+              <picture>
+                <source srcset="images/projects/ios_app.webp" type="image/webp">
+                <img class="project-image" src="images/projects/ios_app.png" alt="ios app image">
+              </picture>
+              <h2 class="project-title">
+                iOS App VoiceShifter
+              </h2>
+              <span class="gh-link">
+                <a href="https://github.com/philoniare/VoiceShifter">https://github.com/philoniare/VoiceShifter</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-desc">
+              <picture>
+                <source srcset="images/projects/visualization.webp" type="image/webp">
+                <img class="project-image" src="images/projects/visualization.png" alt="earthquake visualization image">
+              </picture>
+              <h2 class="project-title">
+                Visualization in Java
+              </h2>
+              <span class="gh-link">
+                <a href="https://github.com/philoniare/WorkingWithJavaLibs">https://github.com/philoniare/WorkingWithJavaLibs</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-desc">
+              <picture>
+                <source srcset="images/projects/laravel.webp" type="image/webp">
+                <img class="project-image" src="images/projects/laravel.png" alt="todo application in laravel">
+              </picture>
+              <h2 class="project-title">
+                Todo App in Laravel
+              </h2>
+              <span class="gh-link center">
+                <a href="https://github.com/philoniare/todoApp">https://github.com/philoniare/todoApp</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
