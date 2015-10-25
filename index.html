@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <title>Portfolio Page</title>
-  <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -12,7 +14,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <header>
       <div class="row">
         <div class="col-md-4">
           <img class="pull-left logo" src="images/udacity-logo.jpg" alt="Udacity Logo">
@@ -22,29 +24,36 @@
           <h3 class="desc">Software Engineer</h3>
         </div>
       </div>
-    </div>
+    </header>
     <hr>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Philoniare</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
 
     <!-- main image -->
     <div class="hero">
-      <picture>
-        <source srcset="images/hero-image.webp" type="image/webp">
-        <img src="images/hero-image.jpg" alt="ones and zeros">
-      </picture>
+    <img class="imgResponsive img-responsive" srcset="images/hero-image-small.jpg 500w, images/hero-image-medium.jpg 1000w" src="images/hero-image.jpg" alt="ones and zeros">
 
     </div>
-    <div class="projects">
+    <section class="projects">
       <div class="row">
-        <h2 id="featured-title">Featured Work</h2>
+        <div class="col-md-12">
+          <h2 id="featured-title">Featured Work</h2>
+        </div>
       </div>
-      <div class="row">
-        <div class="project-thumbnails">
+      <div class="row project-thumbnails">
           <div class="col-md-4">
             <div class="project-desc">
-              <picture>
-                <source srcset="images/projects/ios_app.webp" type="image/webp">
-                <img class="project-image" src="images/projects/ios_app.png" alt="ios app image">
-              </picture>
+              <img class="project-image img-responsive" srcset="images/projects/ios_app.png 500w, images/projects/ios_app.png 1000w" class="project-image" src="images/projects/ios_app.png" alt="ios app image">
               <h2 class="project-title">
                 iOS App VoiceShifter
               </h2>
@@ -55,10 +64,7 @@
           </div>
           <div class="col-md-4">
             <div class="project-desc">
-              <picture>
-                <source srcset="images/projects/visualization.webp" type="image/webp">
-                <img class="project-image" src="images/projects/visualization.png" alt="earthquake visualization image">
-              </picture>
+              <img class="project-image img-responsive" srcset="images/projects/visualization_small.png 500w, images/projects/visualization_medium.png 1000w" class="project-image" src="images/projects/visualization.png" alt="earthquake visualization image">
               <h2 class="project-title">
                 Visualization in Java
               </h2>
@@ -69,10 +75,7 @@
           </div>
           <div class="col-md-4">
             <div class="project-desc">
-              <picture>
-                <source srcset="images/projects/laravel.webp" type="image/webp">
-                <img class="project-image" src="images/projects/laravel.png" alt="todo application in laravel">
-              </picture>
+              <img class="project-image img-responsive" srcset="images/projects/laravel_small.png 500w, images/projects/laravel_medium.png 1000w" src="images/projects/laravel.png" alt="todo application in laravel">
               <h2 class="project-title">
                 Todo App in Laravel
               </h2>
@@ -80,11 +83,15 @@
                 <a href="https://github.com/philoniare/todoApp">https://github.com/philoniare/todoApp</a>
               </span>
             </div>
-
           </div>
-        </div>
       </div>
-    </div>
+
+    </section>
+    <footer>
+      <p>
+        Email Philomath Ingeniare: philoniare@gmail.com
+      </p>
+    </footer>
   </div>
 </body>
 </html>
